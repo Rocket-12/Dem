@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Boostrap Css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand  fs-4 p-2" href="#">i<span class="text-danger">coder</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <div class="collapse navbar-collapse fs-5 p-2" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="#website">Web Desing</a></li>
+              <li><a class="dropdown-item" href="#Software">Developers</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-capitalize" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Teams">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active col-sm-12 col-md-12 col-lg-12 col-12">
+          <img src="d.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="b.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="c.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="main_heading my-5">
+    <div class="text-center ">
+      <h1 class="head animate__animated animate__flip">About <span class="text-danger" id="About"> Us </span></h1>
+      <hr class="w-25 mx-auto" />
+      <!-- Author 2 - Bootstrap Brain Component -->
+    </div>
+
+
+    <div class="row p-5 ">
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12  p-3 animate__animated animate__fadeInLeft">
+        <div class="card border border-dark m-auto animate__animated animate__heartBeat" style="width: 18rem;">
+          <img src="woman-home.jpg" class="card-img-top" alt="logo">
+          <center>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Health Care</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            </div>
+
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12 p-3 animate__animated animate__fadeInLeft">
+        <div class="card border border-dark m-auto animate__animated animate__heartBeat" style="width: 18rem;">
+          <img src="woman-sat-with-laptop-paid-with-credit-card-cafe.jpg" class="card-img-top" alt="logo">
+          <center>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Department</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12 p-3 animate__animated animate__fadeInLeft">
+        <div class="card border border-dark m-auto animate__animated animate__heartBeat" style="width: 18rem;">
+          <img src="remi-bertogliati-hHB8vD_VbUk-unsplash.jpg" class="card-img-top" alt="logo">
+          <center>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Location</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="main_heading my-5 ">
+    <div class="text-center ">
+      <h1 class="head animate__animated animate__flip">Serv<span class="text-danger" id="Services">ices</span></h1>
+      <hr class="w-25 mx-auto" />
+      <!-- Author 2 - Bootstrap Brain Component -->
+    </div>
+
+
+    <div class="row p-5 ">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-12 p-3 animate__animated animate__backInRight">
+        <div class="card border border-dark m-auto" style="width: 24rem; height: 500px;">
+          <img src="e.jpg" class=card-img-top" alt="logo">
+          <center>
+            <div class="card-body">
+              <h4 class="card-title text-success" id="website">Web Desing</h4>
+              <p class="card-text text-primary">Some quick example text to build on the card title and make up the
+                bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Error esse doloribus iure magnam ipsum vel, amet eaque ducimus earum hic?</p>
+              <button type="button" class="btn btn-outline-danger">Read More . .</button>
+
+            </div>
+
+          </center>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-6 col-12 p-3 animate__animated animate__backInRight">
+        <div class="card border border-dark m-auto" style="width: 24rem; height: 500px;">
+          <img src="c.jpg" class="card-img-top" alt="logo" style="height: 250px;">
+          <center>
+            <div class="card-body">
+              <h4 class="card-title text-success" id="Software">Software Developer</h4>
+              <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, tempora velit. Doloribus maxime odio quasi iure quis? Veniam, odio quod.</p>
+              <button type="button" class="btn btn-outline-danger">Read More . .</button>
+            </div>
+
+          </center>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="main_heading my-5">
+    <div class="text-center">
+      <h1 class="head animate__animated animate__flip">Tea<span class="text-danger" id="Teams">ms</span></h1>
+      <hr class="w-25 mx-auto" />
+      <!-- Author 2 - Bootstrap Brain Component -->
+    </div>
+
+
+    <div class="row p-5 ">
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12  p-3 animate__animated animate__fadeInLeft">
+        <div class="card  m-auto animate__animated animate__heartBeat p-3 bg-info" style="width: 18rem;">
+          <img src="Women.1.jpg" class="card-img-top" alt="logo" style="height: 280px;">
+
+          <!-- img-fluid use to give image round circle--------rounded-circle border border-dark p-2  -->
+          <center>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Priya Nehwal</h5>
+              <p class="card-text">Senior Software Developer .</p>
+              <button type="button" class="btn btn-outline-primary">More info . .</button>
+            </div>
+
+          </center>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12 p-3 animate__animated animate__fadeInLeft">
+        <div class="card  m-auto animate__animated animate__heartBeat p-3" style="width: 18rem;">
+          <img src="mwns.jpg" class="card-img-top" alt="logo" style="height: 280px;">
+          <center>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Adom John</h5>
+              <p class="card-text">Assistence Vice Precident.</p>
+              <button type="button" class="btn btn-outline-primary">More info . .</button>
+            </div>
+
+          </center>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12 p-3 animate__animated animate__fadeInLeft">
+        <div class="card  m-auto animate__animated animate__heartBeat p-3 bg-warning" style="width: 18rem;">
+          <img src="womens.2.jpg" class="card-img-top" alt="logo" style="height: 280px;">
+          <center>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Alia Merchant</h5>
+              <p class="card-text">Department Manager.</p>
+              <button type="button" class="btn btn-outline-primary">More info . .</button>
+            </div>
+
+          </center>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="contact">
+    <div class="text-center col-sm-12 col-md-12 col-lg-12 col-12">
+      <h1 class="head animate__animated animate__flip">Contact <span class="text-danger" id="Contact"> Us </span></h1>
+      <hr class="w-25 mx-auto" />
+      <!-- Author 2 - Bootstrap Brain Component -->
+    </div>
+    <div class="row ">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+      
+      <label for="basic-url" class="form-label">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-text">.00</span>
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+      
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Boostrap JavaScript link -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
